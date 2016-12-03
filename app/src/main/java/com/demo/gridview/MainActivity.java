@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         gv = (GridView)findViewById(R.id.gv);
-        MyGridAdapter adapter = new MyGridAdapter(this.getApplicationContext());
+        MyGridAdapter adapter = new MyGridAdapter(this);
         gv.setAdapter(adapter);
     }
 }
